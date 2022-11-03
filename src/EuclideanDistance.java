@@ -1,5 +1,8 @@
 import java.util.*;
 
+/*
+Compute the euclidean distance between two consecutive points and compute the mode.
+ */
 public class EuclideanDistance {
     static double distance(int x1, int y1, int x2, int y2) {
         // Calculating distance
@@ -43,7 +46,6 @@ public class EuclideanDistance {
         //Max frequency, and hence k=1
         return topKFrequentElements(squaredDistances, 1);
     }
-
 
     public static void main(String[] args) {
 
