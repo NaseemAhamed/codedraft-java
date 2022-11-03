@@ -3,8 +3,8 @@ import java.util.*;
 public class EuclideanDistance {
     static double distance(int x1, int y1, int x2, int y2) {
         // Calculating distance
-        return Math.round(Math.sqrt(Math.pow(x2 - x1, 2)
-                + Math.pow(y2 - y1, 2) * 1.0));
+        return Math.sqrt(Math.pow(x2 - x1, 2)
+                + Math.pow(y2 - y1, 2) * 1.0);
     }
 
 
@@ -39,7 +39,7 @@ public class EuclideanDistance {
             //converting double to int
             squaredDistances.add((int) distance(coordinates.get(i).get(0), coordinates.get(i).get(1), coordinates.get(i + 1).get(0), coordinates.get(i + 1).get(1)));
         }
-        squaredDistances.forEach(num -> System.out.println(num));
+        //squaredDistances.forEach(num -> System.out.println(num));
         //Max frequency, and hence k=1
         return topKFrequentElements(squaredDistances, 1);
     }
