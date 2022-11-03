@@ -47,8 +47,8 @@ public class EuclideanDistance {
 
         List<Integer> result = findEuclideanDistanceMode(Arrays.asList(Arrays.asList(-11, 3), Arrays.asList(8, 5), Arrays.asList(-3, 2), Arrays.asList(9, 17)));
         result.forEach(num -> System.out.println(num));
-        //if squaredDistance turns out to be [19,11,19,19] answer is 19.
-        //If squaredDistance turns out to be [19,11,11,19] answer is 19 11.
+        //if squaredDistance turns out to be [19,11,19,19], answer is 19.
+        //If squaredDistance turns out to be [19,11,11,19], answer is 19 11.
 
     }
 
