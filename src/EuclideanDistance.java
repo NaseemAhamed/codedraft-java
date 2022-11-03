@@ -32,7 +32,7 @@ public class EuclideanDistance {
         return result;
     }
 
-    public static List<Integer> findEuclideanDistanceMod(List<List<Integer>> coordinates) {
+    public static List<Integer> findEuclideanDistanceMode(List<List<Integer>> coordinates) {
         List<Integer> squaredDistances = new ArrayList<Integer>();
         for (int i = 0; i < coordinates.size() - 1; i++) {
             //converting double to int
@@ -45,7 +45,7 @@ public class EuclideanDistance {
 
     public static void main(String[] args) {
 
-        List<Integer> result = findEuclideanDistanceMod(Arrays.asList(Arrays.asList(-11, 3), Arrays.asList(8, 5), Arrays.asList(-3, 2), Arrays.asList(9, 17)));
+        List<Integer> result = findEuclideanDistanceMode(Arrays.asList(Arrays.asList(-11, 3), Arrays.asList(8, 5), Arrays.asList(-3, 2), Arrays.asList(9, 17)));
         result.forEach(num -> System.out.println(num));
         //if squaredDistance turns out to be [19,11,19,19] answer is 19.
         //If squaredDistance turns out to be [19,11,11,19] answer is 19 11.
