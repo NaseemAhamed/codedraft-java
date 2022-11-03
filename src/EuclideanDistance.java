@@ -9,6 +9,7 @@ public class EuclideanDistance {
 
 
     static List<Integer> topKFrequentElements(List<Integer> array, int k) {
+        //LinkedHashMap - To maintain the order in case of more than one max frequency element.
         Map<Integer, Integer> frequencyMap = new LinkedHashMap<Integer, Integer>();
         for (int n : array) {
             frequencyMap.put(n, frequencyMap.getOrDefault(n, 0) + 1);
@@ -39,6 +40,7 @@ public class EuclideanDistance {
             squaredDistances.add((int) distance(coordinates.get(i).get(0), coordinates.get(i).get(1), coordinates.get(i + 1).get(0), coordinates.get(i + 1).get(1)));
         }
         squaredDistances.forEach(num -> System.out.println(num));
+        //Max frequency, and hence k=1
         return topKFrequentElements(squaredDistances, 1);
     }
 
